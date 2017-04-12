@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+workspace "CITest"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "9.0"
+use_frameworks!
+project 'CITest', 'Developer' => :debug, 'iTunes' => :release
+inhibit_all_warnings!
+
+target 'CITest' do
+	   pod 'Mixpanel'
+end
+
+
+
